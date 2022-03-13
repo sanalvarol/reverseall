@@ -1,0 +1,12 @@
+def Reverse_All_List(qwe):
+    reversedlist = []
+    for i in qwe:
+        if type(i) == type([]):
+            i.reverse()
+            reversedlist.append(i)
+        else:
+            reversedlist.append(i)
+    reversedlist.reverse()
+    return reversedlist
+
+Reverse_All_List([1,2,3,[4,5,6]])
